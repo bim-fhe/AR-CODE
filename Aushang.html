@@ -11,12 +11,28 @@
 				<img id="my-image" src="image.jpg">
 				<img id="my-image2" src="qr-code.png">
 			</a-assets>
-			<a-marker type='pattern' url='bim-marker.patt'>
+			<!--<a-marker type='pattern' url='bim-marker.patt'>
 				<a-image src="#my-image" width="1.5" height="1" rotation = "-90 180 0" transparent="true"></a-image>
 			</a-marker> 
 			
 			<a-marker type='pattern' url='fhe-marker.patt'>
 				<a-image src="#my-image2" width="1.5" height="1" rotation = "-90 180 0" transparent="true"></a-image>
+			</a-marker>  -->
+			
+			<a-marker type='barcode' value='5'>
+				<a-image src="#my-image2" width="1.5" height="1" rotation = "-90 180 0" transparent="true"></a-image>
+			</a-marker> 
+			
+			<a-marker type='barcode' value='1'>
+				<a-box position='0 0.5 0' material='opacity: 0.6;' color='#0000FF'></a-box>
+			</a-marker> 
+			
+			<a-marker type='barcode' value='4'>
+				<a-box position='0 0.5 0' material='opacity: 0.6;' color='#00FFFF'></a-box>
+			</a-marker> 
+			
+			<a-marker type='barcode' value='9'>
+				<a-image src="#my-image" width="1.5" height="1" rotation = "-90 180 0" transparent="true"></a-image>
 			</a-marker> 
 			<a-entity camera></a-entity>
   		</a-scene>
