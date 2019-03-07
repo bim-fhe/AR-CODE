@@ -1,4 +1,4 @@
-<!doctype HTML>
+ <!doctype HTML>
 <html>
         <head>
                 <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
@@ -14,18 +14,8 @@
                                 <img id="barcode3" src="Bilder/AA1.png">
                                 <img id="barcode4" src="Bilder/AA2.png">
                                 <img id="barcode5" src="Bilder/AA3.png">
-                        </a-assets>
-
-                        <!-- Text zur Erläuterung anzeigen          -->
-                        <a-text value="Bitte treten Sie einen Schritt nachhinten und scannen das gesamte Plakat!"  width="auto"; height="auto"
-                        color="#0000FF" align="center" position="0 0.2 -1" transparent="false" baseline="top"></a-text>
-
-
-                        <!--  <a-entity
-                         geometry="primitive: plane; width: 0.5; height: auto" material="color:#0000FF" position="0 0 -1" baseline
-                         text="value: Bitte treten Sie einen Schritt nachhinten und scannen das gesamte Plakat!"></a-entity>   -->
-                }
-
+                        </a-assets>              
+             
                         <!-- Initialisieren der Marker und Zuordnung der Bilder -->
                         <a-marker type='barcode' value='1'>
                                 <a-image src="#barcode1" width="2" height="1.333" rotation = "-90 0 0" transparent="false"></a-image>
@@ -44,7 +34,7 @@
                         </a-marker>
 
                         <a-marker type='barcode' value='5'>
-                                <a-image src="#barcode5" width="2" height="1.333" rotation = "-90 0 0" transparent="false"></a-image>
+                                <a-image src="#barcode5" width="2.5" height="1.6667" rotation = "-90 355 0" transparent="false"></a-image>
                         </a-marker>
 
                         <!-- Initialisieren einer einfachen Kamera -->
